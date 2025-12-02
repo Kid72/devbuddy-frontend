@@ -1,0 +1,413 @@
+
+> cv-optimizer@0.1.0 test:e2e
+> playwright test tests/cv-workflow.spec.ts --grep should upload CV file
+
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (3) from .env.local -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+🚀 Running global test setup...
+📄 Loading environment from: /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/.env.local
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (5) from tests/playwright.env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+✅ All required environment variables are set
+👤 Setting up test user: test@devbuddy.com
+Test user test@devbuddy.com already exists
+✅ Test user already exists
+✅ Test user authentication verified
+🔐 Setting up authentication state...
+❌ Failed to setup auth state: page.waitForSelector: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('[data-testid="user-menu"]') to be visible[22m
+
+    at waitForAuth (/Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/utils/auth.ts:250:14)
+    at setAuthState (/Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/utils/auth.ts:143:9)
+    at setupAuthState (/Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/setup/global-setup.ts:140:5)
+    at globalSetup (/Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/setup/global-setup.ts:24:3) {
+  name: 'TimeoutError'
+}
+⚠️  Tests will need to authenticate manually
+ℹ️  No API_BASE_URL set, skipping backend verification
+✅ Global setup completed successfully
+
+Running 5 tests using 5 workers
+
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ⚙️  enable debug logging with { debug: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: ⚙️  write to custom object with { processEnv: myObject }
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+  ✘  2 [chromium] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (11.0s)
+  ✘  3 [Mobile Chrome] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (11.1s)
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ⚙️  override existing env vars with { override: true }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+  ✘  4 [webkit] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (11.2s)
+  ✘  5 [Mobile Safari] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (11.2s)
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: ⚙️  suppress all logs with { quiet: true }
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  ✘  1 [firefox] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (9.9s)
+[dotenv@17.2.3] injecting env (0) from tests/.env.test -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+[dotenv@17.2.3] injecting env (0) from .env.local -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  ✘  7 [chromium] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (retry #1) (7.2s)
+  ✘  6 [Mobile Chrome] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (retry #1) (7.2s)
+  ✘  8 [Mobile Safari] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (retry #1) (7.9s)
+  ✘  9 [webkit] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (retry #1) (7.9s)
+  ✘  10 [firefox] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file (retry #1) (7.9s)
+
+
+  1) [chromium] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ─────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-chromium/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-chromium-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/cv-workflow-CV-Workflow-should-upload-CV-file-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [firefox] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ──────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-firefox/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-firefox-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/cv-workflow-CV-Workflow-should-upload-CV-file-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ───────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-webkit/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-webkit-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/cv-workflow-CV-Workflow-should-upload-CV-file-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [Mobile Chrome] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Chrome/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Chrome/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Chrome-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Chrome-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Chrome-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Chrome-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [Mobile Safari] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Safari/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Safari/error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: locator('input[type="file"]')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for locator('input[type="file"]')[22m
+
+
+      19 |     // Check for file input
+      20 |     const fileInput = authenticatedPage.locator('input[type="file"]');
+    > 21 |     await expect(fileInput).toBeVisible();
+         |                             ^
+      22 |
+      23 |     // Upload a test file
+      24 |     const testFilePath = path.join(__dirname, 'fixtures/sample-cv.pdf');
+        at /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/tests/cv-workflow.spec.ts:21:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Safari-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Safari-retry1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Safari-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/cv-workflow-CV-Workflow-should-upload-CV-file-Mobile-Safari-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    [chromium] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ──────────────
+    [firefox] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ───────────────
+    [webkit] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ────────────────
+    [Mobile Chrome] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ─────────
+    [Mobile Safari] › tests/cv-workflow.spec.ts:15:7 › CV Workflow › should upload CV file ─────────
+
+[36m  Serving HTML report at http://localhost:53498. Press Ctrl+C to quit.[39m

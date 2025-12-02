@@ -1,0 +1,64 @@
+/* Ultra-minimal flat code blocks - GitHub style */
+
+/* Clean override - no !important needed since this loads AFTER prose styles */
+.code-block-content pre.shiki {
+  display: block;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f6f8fa;
+  overflow-x: auto;
+  font-family: ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: pre;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.dark .code-block-content pre.shiki {
+  background-color: #0d1117;
+}
+
+pre.shiki code {
+  all: unset;
+  display: block !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  background: none !important;
+}
+
+pre.shiki code span {
+  background: none !important;
+}
+
+/* Inline code - ultra simple */
+code:not(pre code) {
+  padding: 2px 6px;
+  font-size: 13px;
+  background-color: rgba(175, 184, 193, 0.2);
+  font-family: ui-monospace, monospace;
+}
+
+.dark code:not(pre code) {
+  background-color: rgba(110, 118, 129, 0.4);
+}
+
+/* Clean scrollbar */
+pre.shiki::-webkit-scrollbar {
+  height: 6px;
+}
+
+pre.shiki::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+pre.shiki::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.dark pre.shiki::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+}

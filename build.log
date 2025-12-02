@@ -1,0 +1,48 @@
+
+> cv-optimizer@0.1.0 build /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend
+> next build
+
+ ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/raufaliyev/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/raufaliyev/IdeaProjects/devbuddy/devbuddy-frontend/pnpm-lock.yaml
+
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Environments: .env.local
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 2.7s
+   Running TypeScript ...
+   Collecting page data using 10 workers ...
+   Generating static pages using 10 workers (0/11) ...
+   Generating static pages using 10 workers (2/11) 
+   Generating static pages using 10 workers (5/11) 
+   Generating static pages using 10 workers (8/11) 
+ ✓ Generating static pages using 10 workers (11/11) in 534.7ms
+   Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /cv
+├ ƒ /cv/[id]/download
+├ ƒ /cv/[id]/processing
+├ ƒ /cv/[id]/review
+├ ○ /interview
+├ ƒ /interview/[language]
+├ ○ /jobs
+├ ƒ /jobs/[id]
+├ ○ /jobs/saved
+├ ○ /learn
+├ ƒ /learn/[slug]
+├ ƒ /learn/[slug]/[category]
+├ ƒ /learn/[slug]/[category]/[topic]
+├ ○ /upload
+└ ○ /upload/success
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

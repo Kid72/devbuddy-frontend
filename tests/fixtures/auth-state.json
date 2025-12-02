@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "http://localhost:3000",
+      "localStorage": [
+        {
+          "name": "sb-localhost-auth-token",
+          "value": "{\"access_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjU0MzIxL2F1dGgvdjEiLCJzdWIiOiI2OTY2MmIwMi1kZGMzLTQ3OTctOTVlMy0xZTM5YzY4MTgxNmQiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY0NDQ0ODEzLCJpYXQiOjE3NjQ0NDEyMTMsImVtYWlsIjoidGVzdEBkZXZidWRkeS5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidGVzdEBkZXZidWRkeS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI2OTY2MmIwMi1kZGMzLTQ3OTctOTVlMy0xZTM5YzY4MTgxNmQifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2NDQ0MTIxM31dLCJzZXNzaW9uX2lkIjoiZTMzNGFhMzUtYTA5Ni00ZTYxLWI1NDAtZmM0M2QyMTg5MjBmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.JLypk5n_6_xciCj0NxbUohkq4dZ9VC4IFCmJmdSNvW8\",\"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjU0MzIxL2F1dGgvdjEiLCJzdWIiOiI2OTY2MmIwMi1kZGMzLTQ3OTctOTVlMy0xZTM5YzY4MTgxNmQiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzY0NDQ0ODEzLCJpYXQiOjE3NjQ0NDEyMTMsImVtYWlsIjoidGVzdEBkZXZidWRkeS5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6ImVtYWlsIiwicHJvdmlkZXJzIjpbImVtYWlsIl19LCJ1c2VyX21ldGFkYXRhIjp7ImVtYWlsIjoidGVzdEBkZXZidWRkeS5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJzdWIiOiI2OTY2MmIwMi1kZGMzLTQ3OTctOTVlMy0xZTM5YzY4MTgxNmQifSwicm9sZSI6ImF1dGhlbnRpY2F0ZWQiLCJhYWwiOiJhYWwxIiwiYW1yIjpbeyJtZXRob2QiOiJwYXNzd29yZCIsInRpbWVzdGFtcCI6MTc2NDQ0MTIxM31dLCJzZXNzaW9uX2lkIjoiZTMzNGFhMzUtYTA5Ni00ZTYxLWI1NDAtZmM0M2QyMTg5MjBmIiwiaXNfYW5vbnltb3VzIjpmYWxzZX0.JLypk5n_6_xciCj0NxbUohkq4dZ9VC4IFCmJmdSNvW8\",\"expires_in\":3600,\"token_type\":\"bearer\",\"user\":{\"id\":\"test-user-id\",\"email\":\"test@example.com\",\"role\":\"authenticated\"}}"
+        }
+      ]
+    }
+  ]
+}
